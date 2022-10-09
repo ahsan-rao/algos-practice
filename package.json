@@ -1,0 +1,23 @@
+{
+  "name": "algos-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "test-hh": "bash ./scripts/run-test.sh"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": { 
+    "jest": "^24.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahsan-rao/algos-practice.git"
+  },
+  "main": "index.js",
+  "author": "Ahsan Rao",
+  "license": "ISC"
+}
