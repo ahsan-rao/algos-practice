@@ -33,6 +33,7 @@
     //if the stack is not empty, return false      
 
 const balancedParens = input => {
+    //remove all other characters from string
     input = input.replace(/[^()[\]{}]/g, ''); 
     //store an object with bracket key value pairs
     const bracket ={
@@ -42,15 +43,20 @@ const balancedParens = input => {
     }
 
     const stack = [];
-    //declare a stack object
+    //declare a stack object following LIFO
 
+    //iterate through the input string
     for (let char of input) {
+        //if you come across an opening bracket, push it stack
         if (bracket[char]) {stack.push(char)}
         else {
+            //if its closing bracket, pop it off the stack
             let closeBracket = stack.pop();
+            //if it is not matching with opening bracket, return false
             if (bracket[closeBracket] !== char) return false;
         }
     }
+    //return true if stack length is 0
     return (stack.length === 0);
 };
 

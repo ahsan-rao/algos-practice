@@ -1,4 +1,4 @@
-const { balancedParens } = require('../challenges/balanced-parens.js');
+const { balancedParens } = require('../challenges/stacks/balanced-parens.js');
 
 describe('balancedParens test', () => {
 
